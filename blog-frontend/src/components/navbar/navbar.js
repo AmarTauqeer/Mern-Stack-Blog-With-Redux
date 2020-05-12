@@ -35,13 +35,19 @@ class Navbar extends React.Component {
         <div>
           <ul className={this.state.isOpen ? "showNav" : "undefined"}>
             <li>
-              <Link to="/" onClick={this.closeNavbar}>Home</Link>
+              <Link to="/" onClick={this.closeNavbar}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about" onClick={this.closeNavbar}>About</Link>
+              <Link to="/about" onClick={this.closeNavbar}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={this.closeNavbar}>Contact</Link>
+              <Link to="/contact" onClick={this.closeNavbar}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
