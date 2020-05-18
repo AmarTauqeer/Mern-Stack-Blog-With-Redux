@@ -1,0 +1,55 @@
+.post-feed {
+  padding-top: 70px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 700px;
+  }
+  textarea {
+    width: 700px;
+    height: 200px;
+    resize: none;
+  }
+  input,
+  textarea {
+    align-items: center;
+    display: block;
+    margin: 10px;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: border-color 0.2s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    & :focus {
+      background-color: #197721;
+    }
+    &.postFeed-btn {
+      padding: 12px 5px;
+      border-width: 0;
+      font-size: 18px;
+      font-weight: 400;
+      background-color: #cf1306;
+      color: #fff;
+      outline: none;
+      transition: background-color 0.2s;
+      &:hover {
+        background-color: #922509;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-feed input,
+  .post-feed textarea {
+    width: 400px;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

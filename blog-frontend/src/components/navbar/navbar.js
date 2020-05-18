@@ -23,7 +23,7 @@ class Navbar extends React.Component {
       <nav>
         <div className="blog-btn">
           <div className="blog-logo">
-            <a href="#">My Blog</a>
+            <a href="/">My Blog</a>
           </div>
 
           <div className="toggle-btn" onClick={this.handleClick}>
@@ -40,13 +40,23 @@ class Navbar extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={this.closeNavbar}>
-                About
+              <Link to="/post" onClick={this.closeNavbar}>
+                Post
               </Link>
             </li>
             <li>
               <Link to="/contact" onClick={this.closeNavbar}>
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/register" onClick={this.closeNavbar}>
+                Register
+              </Link>
+            </li>
+            <li>
+              <Link to="/login" onClick={this.closeNavbar}>
+                Login
               </Link>
             </li>
           </ul>
