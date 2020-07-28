@@ -40,7 +40,7 @@ class Navbar extends React.Component {
               </Link>
             </li>
             <li>
-              <Link to="/post" onClick={this.closeNavbar}>
+              <Link to="/postmessages" onClick={this.closeNavbar}>
                 Post
               </Link>
             </li>
